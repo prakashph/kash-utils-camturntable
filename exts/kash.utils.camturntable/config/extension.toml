@@ -1,0 +1,35 @@
+[package]
+# Semantic Versionning is used: https://semver.org/
+version = "1.0.0"
+
+# The title and description fields are primarily for displaying extension info in UI
+title = "Turntable Camera"
+description="This creates an animated turntable camera in the scene."
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository = ""
+
+# One of categories for UI.
+category = "Animation"
+
+authors = ["Prakash Haridas"]
+
+# Keywords for the extension
+keywords = ["kit", "turntable", "camera", "animation"]
+
+changelog = "docs/CHANGELOG.md"
+
+icon = "data/icon.png"
+
+preview_image = "data/preview.png"
+
+# Use omni.ui to build simple UI
+[dependencies]
+"omni.kit.uiapp" = {}
+
+# Main python module this extension provides, it will be publicly available as "import kash.utils.camturntable".
+[[python.module]]
+name = "kash.utils.camturntable"
